@@ -7,6 +7,12 @@ PKG_ROOT = Path(__file__).parent.parent
 HERE = Path(__file__).parent
 DATA_FOLDER = PKG_ROOT / "data"
 
+GLOBAL_CONF_PATH = HERE / "conf.yml"
+if not GLOBAL_CONF_PATH.exists():
+    raise FileNotFoundError(
+        f"You need to add a {GLOBAL_CONF_PATH.absolute()} file with Neo4J and OpenAI credentials."
+    )
+
 with open(HERE / "conf.yml", "r", encoding="utf-8") as f:
     _conf: Dict[str, Any] = yaml.safe_load(f)
 
