@@ -1,0 +1,9 @@
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+
+[tool.flake8]
+per-file-ignores = "__init__.py:F401"
+
+[tool.bandit.assert_used]
+skips = ["*.py"]

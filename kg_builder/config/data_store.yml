@@ -1,0 +1,7 @@
+documents:
+  - name: authors
+    uri: kg_builder/data/authors.csv
+  - name: 2021-fair
+    uri: https://arxiv.org/pdf/2005.11401
+  - name: 2024-google
+    uri: https://arxiv.org/pdf/2401.04398

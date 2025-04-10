@@ -1,0 +1,7 @@
+neo4j
+neo4j-graphrag
+neo4j-graphrag[openai]
+neo4j-graphrag[ollama]
+docling
+mlx-vlm
+pyyaml
